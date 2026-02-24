@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="password" placeholder="enter your password" id="venkat">
+    <button onclick="submiteme()">submit</button>
+    <button onclick="toggle()">show password</button>
+  
+    <script>
+    function submiteme(){
+        alert("incorrect password")
+
+    }
+
+    function toggle(){
+       const value= document.getElementById("venkat")
+       console.log(value)
+
+       if(value.type==="password"){
+        value.type="text";
+       }
+       else{
+        value.type="password"
+       }
+    
+    }
+    </script>
+
+</body>
+</html>
