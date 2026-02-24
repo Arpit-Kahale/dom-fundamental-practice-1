@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .tailwind{
+        background-color: rgb(165, 112, 47);
+        color: rgb(17, 17, 17);
+        font-size: 55px;
+
+    }
+</style>
+<body id="bodyID">
+    <h1 id="welcome">Bhai kaise ho</h1>
+    <button onclick="justdo()">click me</button>
+
+    <script>
+        function justdo(){
+        const name = document.getElementById("welcome")
+        const body= document.getElementById("bodyID")
+        alert("ha meri jan arpit Bhai")
+        name.textContent="Heloo Bhai kaise ho aap log"
+         name.style.backgroundColor="pink"
+        name.style.padding="8px"
+        name.style.textAlign="center"
+        name.style.fontSize="40px"
+        name.style.borderRadius="60px"
+        body.classList.toggle("tailwind")
+
+
+
+        }
+    </script>
+
+   <p id="ego">When your ego wins </p>
+
+<script>
+const title = document.getElementById("ego");  // quotes me id name
+console.log(title);
+
+title.textContent = "Everyone's mouth stops";
+title.style.color = "red";
+title.style.fontSize="40px"
+title.style.textAlign="center"
+title.style.backgroundColor="black"
+title.style.margin="40px"
+title.style.padding="30px"
+</script>
+</body>
+</html>
