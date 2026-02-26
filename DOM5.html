@@ -1,0 +1,43 @@
+<!-- So Basically i wanted to create one chat box by using the dom concept -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <div id="op" style="border:2px solid gray; height:400px; padding:10px; overflow-y:auto; background-color:antiquewhite;">
+  
+  <h1 style="text-align:center; margin-top:5px; color:gray; font-weight:400;">
+    CHATBOX
+  </h1>
+
+  <!-- wrapper for centering -->
+  <div style="display:flex; justify-content:center; gap:10px; margin-top:20px;">
+    <input 
+      id="chatinput" 
+      placeholder="Add your message" 
+      style="width:300px; padding:6px;"
+    >
+    <button onclick="sendchat()">Send</button>
+  </div>
+
+   
+   </div>
+   <script>
+    function sendchat(){
+        const chat=document.getElementById("chatinput")//this for select the  input tag line 10
+        
+        const text=chat.value; // this is adding the value inside the input field
+
+        const msg=document.createElement("p")
+        msg.textContent=text;//user input value is added to the paragraph tag
+        document.getElementById("op").appendChild(msg)
+                 
+    }
+   </script>
+
+
+ </body>
+ </html>
